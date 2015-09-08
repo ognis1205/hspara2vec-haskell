@@ -39,11 +39,11 @@ instance Enum Code where
 -- | Represents Huffman encoding context.
 data Context = Cxt {
       -- Index of word within corpus.
-      index      :: Int,
+      index       :: Int,
       -- Frequency word within corpus.
-      frequency  :: Int,
+      frequency   :: Int,
       -- Huffman code of a word.
-      code       :: Code,
-      -- Occurences of the word.
-      occurences :: [Int]
+      code        :: Code,
+      -- Occurrences of the word.
+      occurrences :: [Int]
     } deriving (Eq, Show, Read)
